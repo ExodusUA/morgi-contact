@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #00063d;
+}
+
+.hero-section a {
+    background: transparent;
+}
+
+.formOverlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.267);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepBar {
+    padding-bottom: 10px;
+}

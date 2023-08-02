@@ -1,0 +1,13 @@
+[{
+        "langCode": "US",
+        "countryCode": "US",
+        "name": "English",
+        "file": "./lang/en.json"
+    },
+    {
+        "langCode": "pt",
+        "countryCode": "BR",
+        "name": "Portuguese",
+        "file": "./lang/pt.json"
+    }
+]

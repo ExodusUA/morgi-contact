@@ -1,0 +1,111 @@
+.ways-section {
+  background: url("../../Images/waysImage.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waysBg4 {
+  background: url("../../Images/mask.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.ways-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ways-section-text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.ways-section-card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #00063d;
+}
+
+.ways-section-card p span {
+  font-weight: 700;
+}
+
+.ways-section-card {
+  background: linear-gradient(180deg, #f7f7fe 0%, #abacff 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  width: 250px;
+  height: 250px;
+  padding: 35px;
+}
+
+.ways-section-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .ways-section .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ways-section-card {
+    width: 170px;
+    height: 170px;
+    padding: 15px;
+  }
+  .ways-section-card p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .ways-section-text h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .ways-section {
+    display: block;
+    height: unset;
+  }
+  .ways-section-cards {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ways-section-card {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+  }
+}

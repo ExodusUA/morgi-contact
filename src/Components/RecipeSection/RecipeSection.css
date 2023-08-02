@@ -1,0 +1,140 @@
+.recipe-section {
+    background: #fff;
+    position: relative;
+}
+
+.recipe-section-text h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.05em;
+    color: #00063d;
+    padding-bottom: 20px;
+}
+
+.recipe-section-text a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8649d1;
+    padding: 14px 50px;
+    border: 1px solid #8649d1;
+    border-radius: 100px;
+    text-decoration: none;
+    max-width: 350px;
+}
+
+.recipe-section-text {
+    max-width: 500px;
+    margin-left: 175px;
+}
+
+.recipe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-section-image {
+    width: 50%;
+}
+
+.recipe-section-image img {
+    width: 100%;
+}
+
+.recipe-section-text-mobile {
+    display: none;
+}
+
+.recipe-section-card {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 20px 15px;
+    width: 180px;
+    height: 230px;
+}
+
+.recipe-section-card h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110%;
+    background: linear-gradient(180deg, #8f90fe 0%, #8b71ea 50.31%, #864bd2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.recipe-section-card h5 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #00063d;
+    margin-top: 30px;
+}
+
+.recipe-section-cards {
+    position: absolute;
+    display: flex;
+    gap: 13px;
+    right: 150px;
+}
+
+.recipe-section-cards-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .recipe-section-text {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .recipe-section {
+        flex-direction: column;
+    }
+    .recipe-section-image {
+        width: 100%;
+    }
+    .recipe-section-text {
+        display: none;
+    }
+    .block-white {
+        display: none;
+    }
+    .recipe-section-text-mobile {
+        padding: 16px;
+        display: block;
+    }
+    .recipe-section-cards {
+        display: none;
+    }
+    .recipe-section-cards-mobile {
+        display: block;
+    }
+    .swiper {
+        width: 350px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        width: 150px;
+        height: 300px;
+        margin: 0 auto;
+    }
+}

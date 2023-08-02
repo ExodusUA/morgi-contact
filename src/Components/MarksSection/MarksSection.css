@@ -1,0 +1,99 @@
+.marks-section-list {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.marks-section-block {
+    text-align: center;
+    width: 140px;
+}
+
+.marks-section-block h6 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.marks-section-block h6 span {
+    font-weight: 700;
+}
+
+.marks-section .line {
+    width: 100%;
+    height: 1px;
+    background: #b692e3;
+    opacity: 0.3;
+}
+
+.marks-section {
+    background: linear-gradient(180deg, #00063d 0%, #6534a0 100%), #00063d;
+    padding-bottom: 25px;
+}
+
+.marks-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.marks-section-block img {
+    padding-bottom: 5px;
+}
+
+.marks-section-list h6:first-child {
+    text-align: left;
+}
+
+.marks-section-list .marks-section-block {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.marks-section .container {
+    position: relative;
+}
+
+.marks-section .container::after {
+    content: "";
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #b692e3;
+    border-radius: 39px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.marksSectionWrapper {
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.marksSectionWrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (max-width: 1240px) {
+    .marks-section-list {
+        min-width: 1000px;
+    }
+    .marks-section .container::after {
+        display: none;
+    }
+    .marks-section .line {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 490px) {
+    .marks-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

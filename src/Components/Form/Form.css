@@ -1,0 +1,249 @@
+    .formBlock {
+        padding: 20px;
+        background: white;
+        width: 500px;
+        border-radius: 12px;
+    }
+    
+    .stepLine {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .stepCircle {
+        border-radius: 20px;
+        background: #F2F2F2;
+        width: 27px;
+        height: 27px;
+    }
+    
+    .stepCircle img {
+        opacity: 0;
+        transition: 0.3s;
+    }
+    
+    .stepActive img {
+        opacity: 1;
+    }
+    
+    .input-ratio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .input-ratio>div {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .input-ratio input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-right: 8px;
+        cursor: pointer;
+        background: #F2F2F2;
+    }
+    
+    .input-ratio input[type="radio"]:checked {
+        background-color: #2196F3;
+    }
+    
+    .input-ratio label {
+        cursor: pointer;
+    }
+    
+    .formInputRow p {
+        color: #00063D;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .formInputRow {
+        margin-top: 20px;
+    }
+    
+    .formInputRow input {
+        border-radius: 5px;
+        background: #F2F2F2;
+        width: 100%;
+        outline: none;
+        border: 1px solid transparent;
+        padding: 13px 14px;
+    }
+    
+    .formInputRow input::placeholder {
+        font-style: italic;
+    }
+    
+    .input-ratio p {
+        color: #00063D;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .ratioSelected {
+        position: relative;
+    }
+    
+    .footerLinks {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .formBottom>p {
+        color: #00063D;
+        text-align: center;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 20px;
+        opacity: 0.5;
+    }
+    
+    .footerLinks a {
+        color: #00063D;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    
+    .footerLinks p {
+        font-size: 13px;
+    }
+    
+    .greenButton {
+        background: linear-gradient(182deg, #4CB962 0%, #208B43 100%), linear-gradient(180deg, #1FB9F2 0%, #00AFF0 50.31%, #008CCF 100%), #FDBA0D;
+    }
+    
+    .formContinue {
+        margin-top: 20px;
+        width: 100%;
+        padding: 14px 21px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        color: white;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .formContent {
+        padding-top: 20px;
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+    
+    .formContent::-webkit-scrollbar {
+        width: 0;
+    }
+    /* Сховати браузерний чекбокс */
+    
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    /* Стилізуємо кастомний чекбокс-контейнер */
+    
+    .input-ratio div {
+        position: relative;
+        padding-left: 0px;
+        /* Відступ для відображення кастомного чекбокса */
+        cursor: pointer;
+    }
+    /* Стилізуємо кастомний чекбокс-елемент */
+    
+    .input-ratio div input[type="checkbox"]+label::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    /* Стилізуємо кастомний вибраний чекбокс-елемент */
+    
+    .input-ratio div input[type="checkbox"]:checked+label::before {
+        background-color: #007bff;
+        /* Змініть на відповідний колір */
+        border-color: #007bff;
+        content: "\2713";
+        /* Іконка ✓ */
+        text-align: center;
+        line-height: 16px;
+        color: white;
+        /* Колір іконки ✓ */
+    }
+    
+    .checkboxes div {
+        padding-left: 30px;
+    }
+    
+    .stepLineWrapper {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        height: 5px;
+        background: #F2F2F2;
+        z-index: 1;
+    }
+    
+    .stepLine {
+        position: relative;
+    }
+    
+    .stepCircle {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .stepLineLine {
+        height: 100%;
+        width: 0%;
+        background: #208B43;
+    }
+    
+    .stepCircle img {
+        position: relative;
+        z-index: 9;
+    }
+    
+    .iframeForm {
+        padding: 0;
+        border: none;
+        height: 600px;
+    }
+    
+    .formClose {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    
+    .formClose button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }

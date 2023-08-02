@@ -1,0 +1,206 @@
+.container {
+    max-width: 1110px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-top: 50px;
+}
+
+.logo img {
+    width: 111px;
+}
+
+.hero-section-image img,
+.hero-section-image-mobile img {
+    width: 50%;
+}
+
+.hero-section {
+    padding-top: 100px;
+    max-width: 800px;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    background: linear-gradient(180deg, #1fb9f2 0%, #00aff0 50.31%, #008ccf 100%), #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section.green h1 {
+    background: linear-gradient(193.2deg, #4cb962 12.58%, #208b43 115.54%), linear-gradient(180deg, #1fb9f2 0%, #00aff0 50.31%, #008ccf 100%), #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section.gradient h1 {
+    background: linear-gradient( 198.9deg, #d300c5 9.36%, #ff0169 46.2%, #ff7a00 82.18%), #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section.golden h1 {
+    background: linear-gradient(180deg, #e5d2a5 0%, #feb80c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #ffffff;
+    margin-top: 10px;
+    padding-bottom: 24px;
+}
+
+.hero-section a {
+    text-decoration: none;
+}
+
+.hero-section a button {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter";
+    cursor: pointer;
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(180deg, #1fb9f2 0%, #00aff0 50.31%, #008ccf 100%), #fdba0d;
+    border-radius: 100px;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section.green button {
+    background: linear-gradient(193.2deg, #4cb962 12.58%, #208b43 115.54%), linear-gradient(180deg, #1fb9f2 0%, #00aff0 50.31%, #008ccf 100%), #fdba0d;
+    border-radius: 100px;
+    color: #00063d;
+}
+
+.hero-section.gradient button {
+    background: linear-gradient( 245.94deg, #d300c5 16.39%, #ff0169 54.13%, #ff7a00 90.99%), #fdba0d;
+    color: #fff;
+}
+
+.hero-section.golden button {
+    color: #fff;
+    background: linear-gradient(0deg, #8649D1 0%, #8B6DE8 38.54%, #8F92FF 100%);
+}
+
+.hero-section-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-section-image-mobile {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.hero-section-arrow {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-section-image-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .hero-section-image {
+        display: none;
+    }
+    .hero-section {
+        padding-top: 20px;
+    }
+    .hero-section h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+    }
+    .hero-section h4 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+    }
+    .hero-section a {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 250px;
+    }
+    .hero-section-image img,
+    .hero-section-image-mobile img {
+        width: 100%;
+    }
+    .hero-section a {
+        display: flex;
+        justify-content: center;
+    }
+    .hero-section-arrow svg {
+        display: none;
+    }
+    .hero-section-arrow {
+        margin-top: 50px;
+    }
+    .logo-mobile img {
+        width: 100px;
+    }
+}
