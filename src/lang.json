@@ -9,5 +9,11 @@
         "countryCode": "BR",
         "name": "Portuguese",
         "file": "./lang/pt.json"
+    },
+    {
+        "langCode": "es",
+        "countryCode": "ES",
+        "name": "Spanish",
+        "file": "./lang/es.json"
     }
 ]

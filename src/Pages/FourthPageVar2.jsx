@@ -11,7 +11,7 @@ import heroImage from "../Images/heroImage3.webp";
 import heroImageMobile from "../Images/heroImage3Mobile.webp";
 import Form from "../Components/Form/Form";
 
-const FourthPage = (props) => {
+const FourthPageVar2 = (props) => {
   localStorage.setItem("pageNumber", 4);
 
   const [showForm, setShowForm] = React.useState(false);
@@ -46,7 +46,6 @@ const FourthPage = (props) => {
       <ReturnSection lang={props.langData} setShowForm={setShowForm} />
       <PercentageSection lang={props.langData} setShowForm={setShowForm} />
       <MoneySection lang={props.langData} img={"moneyBg4"} setShowForm={setShowForm} />
-      <MarksSection lang={props.langData} setShowForm={setShowForm} />
       <SeekSection lang={props.langData} setShowForm={setShowForm} />
 
       {
@@ -61,4 +60,4 @@ const FourthPage = (props) => {
   );
 };
 
-export default FourthPage;
+export default FourthPageVar2;

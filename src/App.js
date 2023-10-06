@@ -7,6 +7,7 @@ import FourthPage from "./Pages/FourthPage";
 import Menu from "./Menu/Menu";
 import langList from "./lang.json";
 import TextPhraseContext from "./context.js/context";
+import FourthPageVar2 from "./Pages/FourthPageVar2";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("pt");
@@ -44,7 +45,6 @@ function App() {
   function getTextPhrase(textID, landingNumber) {
 
     if (langData.length !== 0 && landingNumber !== undefined) {
-      console.log(langData['LP' + landingNumber])
       var landingArray = langData['LP' + landingNumber];
       if (landingArray[0][textID] !== undefined) {
         return landingArray[0][textID];
@@ -65,10 +65,11 @@ function App() {
         />
         <BrowserRouter>
           <Routes>
-            <Route path="/page4" element={<FirstPage langData={langData} pageNumber={1} />} />
+            {/* <Route path="/page4" element={<FirstPage langData={langData} pageNumber={1} />} />
             <Route path="/page2" element={<SecondPage langData={langData} pageNumber={2} />} />
-            <Route path="/page3" element={<ThirdPage langData={langData} pageNumber={3} />} />
-            <Route path="/" element={<FourthPage langData={langData} pageNumber={4} />} />
+            <Route path="/page3" element={<ThirdPage langData={langData} pageNumber={3} />} /> */}
+            <Route path="/" element={<FourthPage langData={langData} pageNumber={4} selectedLanguage={selectedLanguage} />} />
+            <Route path="/page2" element={<FourthPageVar2 langData={langData} pageNumber={4} selectedLanguage={selectedLanguage} />} />
           </Routes>
         </BrowserRouter>
       </>
