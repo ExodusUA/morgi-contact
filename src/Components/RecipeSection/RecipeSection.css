@@ -98,9 +98,13 @@
     display: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1550px) {
     .recipe-section-text {
-        margin-left: 30px;
+        margin-left: 100px;
+    }
+
+    .recipe-section-cards {
+        right: 50px;
     }
 }
 
