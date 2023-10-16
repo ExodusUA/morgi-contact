@@ -39,7 +39,7 @@ const FourthPage = (props) => {
       />
       <RecipeSection lang={props.langData} setShowForm={setShowForm} />
       <WaysSection
-        text="The Power of Morgi's Morgis' Monetization"
+        text="The Power of Morgis’ Monetization"
         lang={props.langData}
         image="waysBg4"
         setShowForm={setShowForm}
