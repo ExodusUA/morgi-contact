@@ -42,7 +42,7 @@ const FirstPage = (props) => {
       <ReturnSection lang={props.langData} />
       <PercentageSection lang={props.langData} />
       <MoneySection lang={props.langData} />
-      <MarksSection lang={props.langData} />
+     
       <SeekSection lang={props.langData} />
 
       {

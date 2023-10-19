@@ -47,7 +47,7 @@ const FourthPage = (props) => {
       <ReturnSection lang={props.langData} setShowForm={setShowForm} />
       <PercentageSection lang={props.langData} setShowForm={setShowForm} />
       <MoneySection lang={props.langData} img={"moneyBg4"} setShowForm={setShowForm} />
-      <MarksSection lang={props.langData} setShowForm={setShowForm} />
+     
       <SeekSection lang={props.langData} setShowForm={setShowForm} />
 
       {

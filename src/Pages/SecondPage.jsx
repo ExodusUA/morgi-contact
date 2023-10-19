@@ -48,7 +48,7 @@ const SecondPage = (props) => {
       <ReturnSection lang={props.langData} />
       <PercentageSection lang={props.langData} />
       <MoneySection lang={props.langData} />
-      <MarksSection lang={props.langData} />
+     
       <SeekSection header={false} lang={props.langData} />
 
       {
