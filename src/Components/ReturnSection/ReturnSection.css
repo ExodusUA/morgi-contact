@@ -97,6 +97,7 @@
         line-height: 24px;
         text-align: center;
         letter-spacing: -0.02em;
+        width: 100%;
     }
     .return-section-text a {
         margin: 0 auto;

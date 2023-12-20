@@ -17,7 +17,7 @@ const MoneySection = ({ img }) => {
           <h4>
             {getTextPhrase("moneySectionText", pageNumber)}
           </h4>
-          <a href="https://app.morgis.com/auth/signup-host" target="_blank">{getTextPhrase("moneySectionButtonText", pageNumber)}</a>
+          <a href="https://app.morgis.com/auth/signup-host" style={{marginBottom: '40px'}} target="_blank">{getTextPhrase("moneySectionButtonText", pageNumber)}</a>
         </div>
       </div>
     </div>

@@ -65,9 +65,9 @@ function App() {
         />
         <BrowserRouter>
           <Routes>
-            {/* <Route path="/page4" element={<FirstPage langData={langData} pageNumber={1} />} />
-            <Route path="/page2" element={<SecondPage langData={langData} pageNumber={2} />} />
-            <Route path="/page3" element={<ThirdPage langData={langData} pageNumber={3} />} /> */}
+            <Route path="/page5" element={<FirstPage langData={langData} pageNumber={1} />} />
+            <Route path="/page4" element={<SecondPage langData={langData} pageNumber={2} />} />
+            <Route path="/page3" element={<ThirdPage langData={langData} pageNumber={3} />} />
             <Route path="/" element={<FourthPage langData={langData} pageNumber={4} selectedLanguage={selectedLanguage} />} />
             <Route path="/page2" element={<FourthPageVar2 langData={langData} pageNumber={4} selectedLanguage={selectedLanguage} />} />
           </Routes>
