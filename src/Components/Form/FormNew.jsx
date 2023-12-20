@@ -30,9 +30,9 @@ function FormNew({ setShowForm, selectedLanguage }) {
             <div className="formContainer">
                 {
                     selectedLanguage === 'US'
-                        ? <div data-tf-widget="Iu4lG3p5" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form EN" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
+                        ? <div data-tf-widget="zkHRal40" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form EN" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
                         : selectedLanguage === 'es'
-                            ? <div data-tf-widget="RUuw3fwg" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form ES" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
+                            ? <div data-tf-widget="auzi3aSG" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form ES" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
                             : <div data-tf-widget="KRGqOZxW" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form PT" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
                 }
 
