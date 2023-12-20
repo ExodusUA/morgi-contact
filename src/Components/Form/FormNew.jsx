@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Form.css';
 import { Link } from 'react-router-dom';
 
-function Form({ setShowForm, selectedLanguage }) {
+function FormNew({ setShowForm, selectedLanguage }) {
     useEffect(() => {
 
         const script = document.createElement('script');
@@ -14,7 +14,10 @@ function Form({ setShowForm, selectedLanguage }) {
             document.body.removeChild(script);
         };
     }, []);
-    
+
+    useEffect(() => {
+        console.log(selectedLanguage);
+    }, [selectedLanguage]);
 
     return (
         <div className='formBlock'>
@@ -30,7 +33,7 @@ function Form({ setShowForm, selectedLanguage }) {
                         ? <div data-tf-widget="Iu4lG3p5" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form EN" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
                         : selectedLanguage === 'es'
                             ? <div data-tf-widget="RUuw3fwg" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form ES" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
-                            : <div data-tf-widget="AeMKLcdV" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form PT" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
+                            : <div data-tf-widget="KRGqOZxW" data-tf-opacity="100" data-tf-iframe-props="title=Morgis LP Host Form PT" data-tf-transitive-search-params data-tf-medium="snippet" style={{ width: '100%', height: '500px' }}></div>
                 }
 
             </div>
@@ -47,4 +50,4 @@ function Form({ setShowForm, selectedLanguage }) {
     )
 }
 
-export default Form;
+export default FormNew;

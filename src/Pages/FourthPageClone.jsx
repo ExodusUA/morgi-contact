@@ -9,8 +9,7 @@ import PercentageSection from "../Components/PercentageSection/PercentageSection
 import ReturnSection from "../Components/ReturnSection/ReturnSection";
 import heroImage from "../Images/heroImage3.webp";
 import heroImageMobile from "../Images/heroImage3Mobile.webp";
-import Form from "../Components/Form/Form";
-import { useEffect } from "react";
+import FormNew from "../Components/Form/FormNew";
 
 const FourthPageClone = (props) => {
   localStorage.setItem("pageNumber", 5);
@@ -53,7 +52,7 @@ const FourthPageClone = (props) => {
       {
         showForm === true
           ? <div className="formOverlay">
-            <Form setShowForm={setShowForm} selectedLanguage={props.selectedLanguage} />
+            <FormNew setShowForm={setShowForm} selectedLanguage={props.selectedLanguage} />
           </div>
           : null
       }
